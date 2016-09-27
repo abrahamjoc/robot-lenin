@@ -221,7 +221,7 @@ void setup()
   while ( !digitalRead(BUTTONPIN) );
 
   // esperar 5 segundos 
-  delay(2000);
+  delay(5000);
   
   // mover el robot suave para ganar inercia
   setMotors(100, 100);
@@ -240,10 +240,10 @@ int last_proportional;
 
 // Constantes Proporcional y Derivativa
 float KP = 0.18;
-float KD = 1.56; //1.55;
+float KD = 1.56;
 
 // Establecer máxima velocidad en el poder diferencial
-int max = 162; //140;
+int max = 162;
 
 
 // Constante para Rango de Freno (Range Brake)
