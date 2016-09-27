@@ -103,7 +103,7 @@ void setBrake(boolean left, boolean righ, int value)
 
   if ( righ )
   {
-    // pines RIGH motor
+    // pines RIGHT motor
     digitalWrite(MOTORLEFT_DIR_A,HIGH);
     digitalWrite(MOTORLEFT_DIR_B,HIGH);
     analogWrite (MOTORLEFT_PWM, value);
